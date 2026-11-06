@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+.navbar {
+    background-color: #0750ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+padding: 9px 20px;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.navbar a:hover {
+    color: #ff765e;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 190px;
+}
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.hero-text h2 {
+    font-size: 35px;
+    color: #ff7059;
+    margin-bottom: 15px;
+}
+.hero-text p {
+    font-size: 13px;
+    color: #666;
+}
+section {
+    padding: 20px;
+}
+section h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#about p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #555;
+}
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    padding: 5px 0;
+}
+.skill {
+    background-color: #0750ad;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 6px;
+    flex: 1;
+}
+.skill h3 {
+    font-size: 14px;
+}
+.skill p {
+    font-size: 12px;
+}
+.project-container {
+    width: 65%;
+    margin: auto;
+}
+.project {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 15px 0;
+    height: 110px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+.project h3 {
+    font-size: 14px;
+}
+.project p {
+    font-size: 12px;
+    color: #777;
+}
+form {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+form label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+form input,
+form textarea {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 12px;
+    border: 1px solid #8caedb;
+    border-radius: 4px;
+}
+form textarea {
+    height: 55px;
+    resize: vertical;
+}
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0750ad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #ff7059;
+}
+footer {
+    background-color: #0750ad;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+}
+.back-top {
+    text-align: right;
+    padding: 20px;
+}
+.back-top a {
+    background-color: #0750ad;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navbar ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+    .hero-text h1 {
+        font-size: 30px;
+    }
+    .hero-text h2 {
+        font-size: 25px;
+    }
+    .profile {
+        width: 220px;
+    }
+    .skills-container {
+        flex-direction: column;
+    }
+    .project-container {
+        width: 100%;
+    }
+    form {
+        width: 100%;
+    }
+}
